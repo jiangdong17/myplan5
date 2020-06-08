@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计划信息</title>
+</head>
+<body>
+    <h1>计划信息列表</h1>
+    <ul>
+        {% for plan in plans %}
+        <li>
+            {{ plan.pname }}--{{plan.pp_start_time}}--{{plan.pp_long}}--{{plan.pover_time}}--{{plan.pscore}}--{{plan.pstudent}}
+        </li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
+
